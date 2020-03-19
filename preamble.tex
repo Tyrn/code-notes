@@ -1,5 +1,12 @@
 \documentclass{article}
 
+% Keep indentations with ragged right.
+\makeatletter
+\newcommand\iraggedright{%
+  \let\\\@centercr\@rightskip\@flushglue \rightskip\@rightskip
+  \leftskip\z@skip}
+\makeatother
+
 \usepackage{pdflscape}
 \usepackage{afterpage}
 \usepackage{capt-of}% or use the larger `caption` package
